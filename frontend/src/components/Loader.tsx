@@ -19,3 +19,5 @@ export const Loader: React.FC<LoaderProps> = ({ title = 'Loader', isActive, onAc
     </div>
   );
 };
+
+export default Loader;
