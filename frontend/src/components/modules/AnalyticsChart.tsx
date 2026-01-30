@@ -27,3 +27,5 @@ export const AnalyticsChart: React.FC<AnalyticsChartProps> = ({ id, debug }) => 
     </div>
   );
 };
+
+export default AnalyticsChart;
