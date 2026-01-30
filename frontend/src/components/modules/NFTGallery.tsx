@@ -27,3 +27,5 @@ export const NFTGallery: React.FC<NFTGalleryProps> = ({ id, debug }) => {
     </div>
   );
 };
+
+export default NFTGallery;
