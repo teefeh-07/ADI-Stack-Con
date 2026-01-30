@@ -13,3 +13,5 @@ export const StakingDashboard: React.FC<StakingDashboardProps> = ({ id, debug })
     </div>
   );
 };
+
+export default StakingDashboard;
