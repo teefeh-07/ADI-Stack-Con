@@ -2,3 +2,4 @@
 export const messages = {
   "app.title": "ADI Stack Con - jp",
   "nav.home": "Home - jp",
+  "nav.about": "About - jp",
