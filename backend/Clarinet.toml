@@ -1,0 +1,19 @@
+[project]
+name = "ADI-Stack-Contracts"
+description = ""
+authors = []
+telemetry = true
+cache_dir = "./.cache"
+
+[contracts]
+# Add contracts here
+
+[repl]
+clarity_wasm_mode = false
+show_timings = false
+
+[application]
+project_name = "ADI-Stack-Contracts"
+project_version = "1.0.0"
+clarity_version = 4
+epoch = "3.3"
