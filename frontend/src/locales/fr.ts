@@ -6,3 +6,4 @@ export const messages = {
   "btn.connect": "Connect Wallet - fr",
   "btn.disconnect": "Disconnect - fr",
   "status.loading": "Loading... - fr",
+  "status.error": "Error occurred - fr",
