@@ -19,3 +19,5 @@ export const Avatar: React.FC<AvatarProps> = ({ title = 'Avatar', isActive, onAc
     </div>
   );
 };
+
+export default Avatar;
