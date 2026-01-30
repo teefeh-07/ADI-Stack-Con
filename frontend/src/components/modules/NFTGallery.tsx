@@ -29,3 +29,5 @@ export const NFTGallery: React.FC<NFTGalleryProps> = ({ id, debug }) => {
 };
 
 export default NFTGallery;
+
+// TODO: Implement ErrorBoundary here
