@@ -19,3 +19,5 @@ export const Button: React.FC<ButtonProps> = ({ title = 'Button', isActive, onAc
     </div>
   );
 };
+
+export default Button;
