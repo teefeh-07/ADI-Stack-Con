@@ -1,2 +1,3 @@
 // Localization for Japanese (jp)
 export const messages = {
+  "app.title": "ADI Stack Con - jp",
