@@ -27,3 +27,5 @@ export const NetworkStatus: React.FC<NetworkStatusProps> = ({ id, debug }) => {
     </div>
   );
 };
+
+export default NetworkStatus;
