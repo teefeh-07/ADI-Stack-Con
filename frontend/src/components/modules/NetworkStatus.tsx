@@ -29,3 +29,5 @@ export const NetworkStatus: React.FC<NetworkStatusProps> = ({ id, debug }) => {
 };
 
 export default NetworkStatus;
+
+// TODO: Implement ErrorBoundary here
