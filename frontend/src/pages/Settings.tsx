@@ -19,3 +19,5 @@ export const Settings: React.FC<SettingsProps> = ({ title = 'Settings', isActive
     </div>
   );
 };
+
+export default Settings;
