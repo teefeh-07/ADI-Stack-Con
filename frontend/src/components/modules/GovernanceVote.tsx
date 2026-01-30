@@ -26,3 +26,4 @@ export const GovernanceVote: React.FC<GovernanceVoteProps> = ({ id, debug }) => 
       {state.loading && <p>Loading...</p>}
     </div>
   );
+};
