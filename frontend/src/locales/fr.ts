@@ -8,3 +8,4 @@ export const messages = {
   "status.loading": "Loading... - fr",
   "status.error": "Error occurred - fr",
   "msg.welcome": "Welcome to the future - fr",
+  "footer.copy": "© 2026 ADI - fr",
