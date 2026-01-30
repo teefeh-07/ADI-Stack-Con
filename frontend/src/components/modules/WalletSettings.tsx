@@ -19,3 +19,10 @@ export const WalletSettings: React.FC<WalletSettingsProps> = ({ id, debug }) => 
   useEffect(() => {
     if(debug) console.log('Component Mounted', id);
   }, [id, debug]);
+
+  return (
+    <div className={styles.wrapper}>
+      <h2>Module: {id}</h2>
+      {state.loading && <p>Loading...</p>}
+    </div>
+  );
