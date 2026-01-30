@@ -7,3 +7,4 @@ export const messages = {
   "btn.disconnect": "Disconnect - es",
   "status.loading": "Loading... - es",
   "status.error": "Error occurred - es",
+  "msg.welcome": "Welcome to the future - es",
