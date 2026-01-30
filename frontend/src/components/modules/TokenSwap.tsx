@@ -26,3 +26,4 @@ export const TokenSwap: React.FC<TokenSwapProps> = ({ id, debug }) => {
       {state.loading && <p>Loading...</p>}
     </div>
   );
+};
