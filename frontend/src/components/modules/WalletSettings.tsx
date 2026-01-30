@@ -26,3 +26,4 @@ export const WalletSettings: React.FC<WalletSettingsProps> = ({ id, debug }) => 
       {state.loading && <p>Loading...</p>}
     </div>
   );
+};
