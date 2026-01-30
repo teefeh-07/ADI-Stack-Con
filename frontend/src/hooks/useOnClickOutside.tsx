@@ -19,3 +19,5 @@ export const useOnClickOutside: React.FC<useOnClickOutsideProps> = ({ title = 'u
     </div>
   );
 };
+
+export default useOnClickOutside;
