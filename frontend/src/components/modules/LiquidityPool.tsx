@@ -6,3 +6,9 @@ interface LiquidityPoolProps {
   id: string;
   debug?: boolean;
 }
+
+// Internal State Interface
+interface State {
+  loading: boolean;
+  data: any;
+}
