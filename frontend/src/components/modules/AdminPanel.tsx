@@ -29,3 +29,5 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ id, debug }) => {
 };
 
 export default AdminPanel;
+
+// TODO: Implement ErrorBoundary here
