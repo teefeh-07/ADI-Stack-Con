@@ -26,3 +26,4 @@ export const NetworkStatus: React.FC<NetworkStatusProps> = ({ id, debug }) => {
       {state.loading && <p>Loading...</p>}
     </div>
   );
+};
