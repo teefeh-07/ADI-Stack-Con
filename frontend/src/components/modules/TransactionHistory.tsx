@@ -29,3 +29,5 @@ export const TransactionHistory: React.FC<TransactionHistoryProps> = ({ id, debu
 };
 
 export default TransactionHistory;
+
+// TODO: Implement ErrorBoundary here
