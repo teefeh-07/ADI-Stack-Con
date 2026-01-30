@@ -19,3 +19,5 @@ export const Campaigns: React.FC<CampaignsProps> = ({ title = 'Campaigns', isAct
     </div>
   );
 };
+
+export default Campaigns;
