@@ -26,3 +26,4 @@ export const NFTGallery: React.FC<NFTGalleryProps> = ({ id, debug }) => {
       {state.loading && <p>Loading...</p>}
     </div>
   );
+};
