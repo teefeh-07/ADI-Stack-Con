@@ -19,3 +19,5 @@ export const usePrevious: React.FC<usePreviousProps> = ({ title = 'usePrevious',
     </div>
   );
 };
+
+export default usePrevious;
