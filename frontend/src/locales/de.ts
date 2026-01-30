@@ -6,3 +6,4 @@
   "msg.welcome": "Welcome to the future - de",
   "footer.copy": "© 2026 ADI - de",
   "auth.login": "Login - de",
+};
