@@ -10,3 +10,4 @@ export const messages = {
   "msg.welcome": "Welcome to the future - cn",
   "footer.copy": "© 2026 ADI - cn",
   "auth.login": "Login - cn",
+};
