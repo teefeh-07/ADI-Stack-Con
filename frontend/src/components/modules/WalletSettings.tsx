@@ -15,3 +15,7 @@ interface State {
 
 export const WalletSettings: React.FC<WalletSettingsProps> = ({ id, debug }) => {
   const [state, setState] = useState<State>({ loading: false, data: null });
+
+  useEffect(() => {
+    if(debug) console.log('Component Mounted', id);
+  }, [id, debug]);
