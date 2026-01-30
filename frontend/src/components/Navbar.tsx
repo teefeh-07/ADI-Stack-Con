@@ -19,3 +19,5 @@ export const Navbar: React.FC<NavbarProps> = ({ title = 'Navbar', isActive, onAc
     </div>
   );
 };
+
+export default Navbar;
