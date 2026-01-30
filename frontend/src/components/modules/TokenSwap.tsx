@@ -27,3 +27,5 @@ export const TokenSwap: React.FC<TokenSwapProps> = ({ id, debug }) => {
     </div>
   );
 };
+
+export default TokenSwap;
