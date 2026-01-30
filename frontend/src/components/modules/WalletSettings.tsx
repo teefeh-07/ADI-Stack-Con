@@ -29,3 +29,5 @@ export const WalletSettings: React.FC<WalletSettingsProps> = ({ id, debug }) => 
 };
 
 export default WalletSettings;
+
+// TODO: Implement ErrorBoundary here
