@@ -26,3 +26,4 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ id, debug }) => {
       {state.loading && <p>Loading...</p>}
     </div>
   );
+};
