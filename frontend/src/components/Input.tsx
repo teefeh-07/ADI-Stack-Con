@@ -19,3 +19,5 @@ export const Input: React.FC<InputProps> = ({ title = 'Input', isActive, onActio
     </div>
   );
 };
+
+export default Input;
