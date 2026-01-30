@@ -19,3 +19,5 @@ export const Profile: React.FC<ProfileProps> = ({ title = 'Profile', isActive, o
     </div>
   );
 };
+
+export default Profile;
