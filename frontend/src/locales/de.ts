@@ -5,3 +5,5 @@ export const messages = {
   "nav.about": "About - de",
   "btn.connect": "Connect Wallet - de",
   "btn.disconnect": "Disconnect - de",
+  "status.loading": "Loading... - de",
+  "status.error": "Error occurred - de",
