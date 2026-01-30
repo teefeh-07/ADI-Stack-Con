@@ -27,3 +27,5 @@ export const TransactionHistory: React.FC<TransactionHistoryProps> = ({ id, debu
     </div>
   );
 };
+
+export default TransactionHistory;
