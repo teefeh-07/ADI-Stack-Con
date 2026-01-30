@@ -29,3 +29,5 @@ export const LiquidityPool: React.FC<LiquidityPoolProps> = ({ id, debug }) => {
 };
 
 export default LiquidityPool;
+
+// TODO: Implement ErrorBoundary here
