@@ -19,3 +19,5 @@ export const useLocalStorage: React.FC<useLocalStorageProps> = ({ title = 'useLo
     </div>
   );
 };
+
+export default useLocalStorage;
