@@ -29,3 +29,5 @@ export const AnalyticsChart: React.FC<AnalyticsChartProps> = ({ id, debug }) => 
 };
 
 export default AnalyticsChart;
+
+// TODO: Implement ErrorBoundary here
