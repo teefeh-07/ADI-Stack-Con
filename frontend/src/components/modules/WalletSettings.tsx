@@ -27,3 +27,5 @@ export const WalletSettings: React.FC<WalletSettingsProps> = ({ id, debug }) => 
     </div>
   );
 };
+
+export default WalletSettings;
