@@ -15,3 +15,7 @@ interface State {
 
 export const NFTGallery: React.FC<NFTGalleryProps> = ({ id, debug }) => {
   const [state, setState] = useState<State>({ loading: false, data: null });
+
+  useEffect(() => {
+    if(debug) console.log('Component Mounted', id);
+  }, [id, debug]);
