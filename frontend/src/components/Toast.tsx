@@ -19,3 +19,5 @@ export const Toast: React.FC<ToastProps> = ({ title = 'Toast', isActive, onActio
     </div>
   );
 };
+
+export default Toast;
