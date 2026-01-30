@@ -4,10 +4,14 @@ const path = require('path');
 
 const LOG_FILE = 'ACTIVITY_LOG.md';
 
-function runCmd(cmd) {
+function runCmd(cmd, capture = false) {
     try {
         console.log(`Running: ${cmd}`);
-        return execSync(cmd, { stdio: 'inherit', encoding: 'utf-8' });
+        const options = { encoding: 'utf-8' };
+        if (!capture) {
+            options.stdio = 'inherit';
+        }
+        return execSync(cmd, options);
     } catch (e) {
         console.error(`Command failed: ${cmd}`);
         // don't always throw, let caller handle or ignore

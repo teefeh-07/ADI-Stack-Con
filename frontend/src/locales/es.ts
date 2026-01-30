@@ -9,3 +9,4 @@ export const messages = {
   "status.error": "Error occurred - es",
   "msg.welcome": "Welcome to the future - es",
   "footer.copy": "© 2026 ADI - es",
+  "auth.login": "Login - es",
