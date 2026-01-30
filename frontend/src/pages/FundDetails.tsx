@@ -19,3 +19,5 @@ export const FundDetails: React.FC<FundDetailsProps> = ({ title = 'FundDetails',
     </div>
   );
 };
+
+export default FundDetails;
