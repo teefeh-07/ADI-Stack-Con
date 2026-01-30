@@ -27,3 +27,5 @@ export const LiquidityPool: React.FC<LiquidityPoolProps> = ({ id, debug }) => {
     </div>
   );
 };
+
+export default LiquidityPool;
