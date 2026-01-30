@@ -7,3 +7,5 @@ export const messages = {
   "btn.disconnect": "Disconnect - kr",
   "status.loading": "Loading... - kr",
   "status.error": "Error occurred - kr",
+  "msg.welcome": "Welcome to the future - kr",
+  "footer.copy": "© 2026 ADI - kr",
