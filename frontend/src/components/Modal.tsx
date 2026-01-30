@@ -19,3 +19,5 @@ export const Modal: React.FC<ModalProps> = ({ title = 'Modal', isActive, onActio
     </div>
   );
 };
+
+export default Modal;
