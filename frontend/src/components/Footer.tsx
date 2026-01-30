@@ -19,3 +19,5 @@ export const Footer: React.FC<FooterProps> = ({ title = 'Footer', isActive, onAc
     </div>
   );
 };
+
+export default Footer;
