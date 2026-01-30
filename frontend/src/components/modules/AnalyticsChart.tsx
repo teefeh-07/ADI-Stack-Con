@@ -26,3 +26,4 @@ export const AnalyticsChart: React.FC<AnalyticsChartProps> = ({ id, debug }) => 
       {state.loading && <p>Loading...</p>}
     </div>
   );
+};
