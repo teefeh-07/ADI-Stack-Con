@@ -12,3 +12,6 @@ interface State {
   loading: boolean;
   data: any;
 }
+
+export const GovernanceVote: React.FC<GovernanceVoteProps> = ({ id, debug }) => {
+  const [state, setState] = useState<State>({ loading: false, data: null });
