@@ -12,3 +12,6 @@ interface State {
   loading: boolean;
   data: any;
 }
+
+export const LiquidityPool: React.FC<LiquidityPoolProps> = ({ id, debug }) => {
+  const [state, setState] = useState<State>({ loading: false, data: null });
