@@ -27,3 +27,5 @@ export const GovernanceVote: React.FC<GovernanceVoteProps> = ({ id, debug }) => 
     </div>
   );
 };
+
+export default GovernanceVote;
