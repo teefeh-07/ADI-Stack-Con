@@ -27,3 +27,5 @@ export const AdminPanel: React.FC<AdminPanelProps> = ({ id, debug }) => {
     </div>
   );
 };
+
+export default AdminPanel;
