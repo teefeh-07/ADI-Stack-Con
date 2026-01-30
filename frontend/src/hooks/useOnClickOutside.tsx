@@ -2,3 +2,9 @@ import React, { useState, useEffect } from 'react';
 import styles from './useOnClickOutside.module.css';
 
 // useOnClickOutside Component Definition
+
+interface useOnClickOutsideProps {
+  title?: string;
+  isActive?: boolean;
+  onAction?: () => void;
+}
