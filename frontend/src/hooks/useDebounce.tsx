@@ -19,3 +19,5 @@ export const useDebounce: React.FC<useDebounceProps> = ({ title = 'useDebounce',
     </div>
   );
 };
+
+export default useDebounce;
