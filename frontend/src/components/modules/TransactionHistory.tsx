@@ -26,3 +26,4 @@ export const TransactionHistory: React.FC<TransactionHistoryProps> = ({ id, debu
       {state.loading && <p>Loading...</p>}
     </div>
   );
+};
