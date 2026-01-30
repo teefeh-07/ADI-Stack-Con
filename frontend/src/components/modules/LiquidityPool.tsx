@@ -26,3 +26,4 @@ export const LiquidityPool: React.FC<LiquidityPoolProps> = ({ id, debug }) => {
       {state.loading && <p>Loading...</p>}
     </div>
   );
+};
