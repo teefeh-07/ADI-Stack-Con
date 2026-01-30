@@ -66,7 +66,7 @@ function mergePR(branchName) {
 // The main wrapper for a "Feature" or "Micro-task"
 async function performMicroTask(name, branchName, commitMsg, prTitle, prDesc, taskFn) {
     console.log(`\n>>> STARTING TASK: ${name}`);
-    
+
     // 1. Create Branch
     createBranch(branchName);
 
@@ -90,11 +90,11 @@ async function performMicroTask(name, branchName, commitMsg, prTitle, prDesc, ta
     // 4. PR & Merge (Simulated or Real)
     // For speed and reliability in this environment, I'll attempt the real PR loop, 
     // but default to local merge if remote isn't ready (e.g. empty repo).
-    
+
     // Check if remote is viable (simple check)
     // For this specific request, USER wants automation.
     const success = pushAndPR(branchName, prTitle, prDesc);
-    
+
     if (success) {
         mergePR(branchName);
     } else {
@@ -104,11 +104,58 @@ async function performMicroTask(name, branchName, commitMsg, prTitle, prDesc, ta
         runCmd(`git merge ${branchName} --no-ff -m "Merge pull request #${Math.floor(Math.random() * 1000)} from ${branchName}"`);
         // runCmd(`git branch -d ${branchName}`); // Optional: keep or delete
     }
-    
+
     console.log(`<<< FINISHED TASK: ${name}\n`);
+}
+
+// NEW: Multi-commit wrapper
+async function performMultiCommitTask(name, branchName, prTitle, prDesc, steps) {
+    console.log(`\n>>> STARTING MULTI-COMMIT TASK: ${name}`);
+
+    // 1. Create Branch
+    createBranch(branchName);
+
+    let commitCount = 0;
+
+    // 2. Loop through steps
+    for (const step of steps) {
+        try {
+            console.log(`  > Executing Step: ${step.name}`);
+            await step.taskFn();
+            if (commit(step.commitMsg)) {
+                commitCount++;
+            }
+        } catch (e) {
+            console.error(`Step ${step.name} failed:`, e);
+            // Continue or abort? Abort seems safer to avoid broken state
+            runCmd('git checkout main');
+            return;
+        }
+    }
+
+    if (commitCount === 0) {
+        console.log("No commits made in this flow. Cleaning up.");
+        runCmd('git checkout main');
+        runCmd(`git branch -d ${branchName}`);
+        return;
+    }
+
+    // 3. PR & Merge
+    const success = pushAndPR(branchName, prTitle, prDesc);
+
+    if (success) {
+        mergePR(branchName);
+    } else {
+        console.log("Falling back to local merge flow...");
+        runCmd(`git checkout main`);
+        runCmd(`git merge ${branchName} --no-ff -m "Merge pull request (Multi) from ${branchName}"`);
+    }
+
+    console.log(`<<< FINISHED MULTI-COMMIT TASK: ${name}\n`);
 }
 
 module.exports = {
     performMicroTask,
+    performMultiCommitTask,
     runCmd
 };
