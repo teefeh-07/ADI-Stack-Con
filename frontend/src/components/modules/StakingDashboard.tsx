@@ -12,3 +12,4 @@ export const StakingDashboard: React.FC<StakingDashboardProps> = ({ id, debug })
       {state.loading && <p>Loading...</p>}
     </div>
   );
+};
