@@ -19,3 +19,5 @@ export const Dashboard: React.FC<DashboardProps> = ({ title = 'Dashboard', isAct
     </div>
   );
 };
+
+export default Dashboard;
