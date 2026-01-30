@@ -29,3 +29,5 @@ export const GovernanceVote: React.FC<GovernanceVoteProps> = ({ id, debug }) => 
 };
 
 export default GovernanceVote;
+
+// TODO: Implement ErrorBoundary here
