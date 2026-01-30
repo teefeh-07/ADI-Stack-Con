@@ -16,5 +16,8 @@
     "url": "https://github.com/teefeh-07/ADI-Stack-Con/issues"
   },
   "homepage": "https://github.com/teefeh-07/ADI-Stack-Con#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@stacks/connect": "^8.2.4"
+  }
 }
