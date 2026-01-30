@@ -19,3 +19,5 @@ export const Card: React.FC<CardProps> = ({ title = 'Card', isActive, onAction }
     </div>
   );
 };
+
+export default Card;
