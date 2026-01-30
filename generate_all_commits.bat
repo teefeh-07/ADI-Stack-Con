@@ -1,0 +1,23 @@
+@echo off
+echo Starting FULL Mass Commit Generation Suite...
+
+echo 1. Core Components...
+node scripts/mass-generator.js
+
+echo 2. Unit Tests...
+node scripts/mass-generator-tests.js
+
+echo 3. Documentation...
+node scripts/mass-generator-docs.js
+
+echo 4. Advanced Modules...
+node scripts/mass-generator-advanced.js
+
+echo 5. Global Localization (I18n)...
+node scripts/mass-generator-i18n.js
+
+echo Cleaning up branches...
+node scripts/cleanup-merger.js
+
+echo DONE. Check your commit history!
+pause
