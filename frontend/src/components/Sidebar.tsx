@@ -19,3 +19,5 @@ export const Sidebar: React.FC<SidebarProps> = ({ title = 'Sidebar', isActive, o
     </div>
   );
 };
+
+export default Sidebar;
