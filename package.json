@@ -19,6 +19,7 @@
   "description": "",
   "dependencies": {
     "@stacks/connect": "^8.2.4",
-    "@stacks/transactions": "^7.3.1"
+    "@stacks/transactions": "^7.3.1",
+    "@stacks/wallet-sdk": "^7.2.0"
   }
 }
