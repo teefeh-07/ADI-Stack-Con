@@ -12,3 +12,6 @@ interface State {
   loading: boolean;
   data: any;
 }
+
+export const TokenSwap: React.FC<TokenSwapProps> = ({ id, debug }) => {
+  const [state, setState] = useState<State>({ loading: false, data: null });
